@@ -525,6 +525,6 @@ class __TwigTemplate_fa5f34a736e8cdce23e0b827990fa696 extends Template
 
 </div>
 
-{% endblock %}", "registration/register.html.twig", "C:\\xampp\\htdocs\\13-TP7\\templates\\registration\\register.html.twig");
+{% endblock %}", "registration/register.html.twig", "C:\\Users\\cmptp\\Desktop\\GoogleOAuth_Symfony\\templates\\registration\\register.html.twig");
     }
 }

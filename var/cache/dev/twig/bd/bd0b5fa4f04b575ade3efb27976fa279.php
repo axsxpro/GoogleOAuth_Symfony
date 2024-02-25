@@ -981,6 +981,6 @@ class __TwigTemplate_0007bc6a149a26001fbc43fc603744d8 extends Template
         </table>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/config.html.twig", "C:\\Users\\cmptp\\Desktop\\TP7\\formulaire\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\config.html.twig");
+", "@WebProfiler/Collector/config.html.twig", "C:\\Users\\cmptp\\Desktop\\GoogleOAuth_Symfony\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\config.html.twig");
     }
 }

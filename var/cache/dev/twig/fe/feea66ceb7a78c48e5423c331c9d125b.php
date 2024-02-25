@@ -61,9 +61,33 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\">Connexion</a>
             </div>
-        </div>
+            ";
+        // line 13
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 13, $this->source); })()), "user", [], "any", false, false, false, 13)) {
+            // line 14
+            echo "            <div class=\"navbar-nav ms-auto\">
+                <div class=\"nav-item\">
+                    <div class=\"mb-3\">
+                        Bonjour, ";
+            // line 17
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 17, $this->source); })()), "user", [], "any", false, false, false, 17), "userIdentifier", [], "any", false, false, false, 17), "html", null, true);
+            echo "!
+                        <br>
+                        <a href=\"";
+            // line 19
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+            echo "\">Deconnexion</a>
+                    </div>
+                </div>
+            </div>
+            ";
+        }
+        // line 24
+        echo "        </div>
     </div>
-</nav>";
+</nav>
+
+";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -84,7 +108,7 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
 
     public function getDebugInfo()
     {
-        return array (  61 => 11,  57 => 10,  47 => 3,  43 => 1,);
+        return array (  86 => 24,  78 => 19,  73 => 17,  68 => 14,  66 => 13,  61 => 11,  57 => 10,  47 => 3,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -101,8 +125,21 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
                 <a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_register') }}\">Inscription</a>
                 <a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_login') }}\">Connexion</a>
             </div>
+            {% if app.user %}
+            <div class=\"navbar-nav ms-auto\">
+                <div class=\"nav-item\">
+                    <div class=\"mb-3\">
+                        Bonjour, {{ app.user.userIdentifier }}!
+                        <br>
+                        <a href=\"{{ path('app_logout') }}\">Deconnexion</a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
         </div>
     </div>
-</nav>", "navbar.html.twig", "C:\\xampp\\htdocs\\13-TP7\\templates\\navbar.html.twig");
+</nav>
+
+", "navbar.html.twig", "C:\\Users\\cmptp\\Desktop\\GoogleOAuth_Symfony\\templates\\navbar.html.twig");
     }
 }

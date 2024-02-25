@@ -511,6 +511,6 @@ class __TwigTemplate_7a702b9f879030cc9142df4c6d453a47 extends Template
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "C:\\Users\\cmptp\\Desktop\\TP7\\formulaire\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "C:\\Users\\cmptp\\Desktop\\GoogleOAuth_Symfony\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
     }
 }

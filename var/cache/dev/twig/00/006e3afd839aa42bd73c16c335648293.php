@@ -188,9 +188,7 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
         }
         // line 102
         echo "
-    ";
-        // line 108
-        echo "
+
     <div class=\"blocFormulaireInscription\">
 
         <div class='formulaire_Inscription'>
@@ -200,14 +198,14 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
                 <div class=\"blocInscription\">
                     <h4><a class=\"nav-link active\" aria-current=\"page\" href=\"";
-        // line 117
+        // line 112
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
         echo "\">INSCRIPTION</a></h4>
                 </div>
 
                 <div class=\"blocConnexion\">
                     <h4><a class=\"nav-link active\" aria-current=\"page\" href=\"";
-        // line 121
+        // line 116
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\">CONNEXION</a></h4>
                 </div>
@@ -220,8 +218,8 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
                 <label for=\"inputEmail\">Email</label>
                 <input type=\"email\" value=\"";
-        // line 131
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 131, $this->source); })()), "html", null, true);
+        // line 126
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 126, $this->source); })()), "html", null, true);
         echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus>
 
 
@@ -235,7 +233,7 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
 
                 <input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 143
+        // line 138
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\">
 
@@ -247,7 +245,7 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
                 <div class=\"googleAUTH\">
                     <a class=\"nav-link active\" href=\"";
-        // line 152
+        // line 147
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("connect_google");
         echo "\"><img  src=\"/img/LogoGoogleAuth.png\" style=' width:30px; 'alt=\"LogoGoogleAUTH\">oogle connexion</a>
                 </div>
@@ -282,7 +280,7 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
     public function getDebugInfo()
     {
-        return array (  251 => 152,  239 => 143,  224 => 131,  211 => 121,  204 => 117,  193 => 108,  190 => 102,  184 => 100,  182 => 99,  88 => 7,  78 => 6,  59 => 3,  36 => 1,);
+        return array (  249 => 147,  237 => 138,  222 => 126,  209 => 116,  202 => 112,  190 => 102,  184 => 100,  182 => 99,  88 => 7,  78 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -389,11 +387,6 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
     <div class=\"alert alert-danger\">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
 
-    {#  {% if app.user %}
-    <div class=\"mb-3\">
-        Bonjour, {{ app.user.userIdentifier }}! <a href=\"{{ path('app_logout') }}\">Deconnexion</a>
-    </div>
-    {% endif %} #}
 
     <div class=\"blocFormulaireInscription\">
 
@@ -451,6 +444,6 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 </form>
 
 {% endblock %}
-", "security/login.html.twig", "C:\\xampp\\htdocs\\13-TP7\\templates\\security\\login.html.twig");
+", "security/login.html.twig", "C:\\Users\\cmptp\\Desktop\\GoogleOAuth_Symfony\\templates\\security\\login.html.twig");
     }
 }

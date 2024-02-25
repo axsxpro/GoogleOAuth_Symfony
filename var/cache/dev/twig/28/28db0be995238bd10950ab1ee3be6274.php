@@ -243,6 +243,6 @@ class __TwigTemplate_6bd0f6abc7d73fc3e36e455fcaa45783 extends Template
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/exception.html.twig", "C:\\Users\\cmptp\\Desktop\\TP7\\formulaire\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\exception.html.twig");
+", "@WebProfiler/Collector/exception.html.twig", "C:\\Users\\cmptp\\Desktop\\GoogleOAuth_Symfony\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\exception.html.twig");
     }
 }

@@ -888,6 +888,6 @@ class __TwigTemplate_1ee172d005497eb65198780979c08744 extends Template
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "C:\\Users\\cmptp\\Desktop\\TP7\\formulaire\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "C:\\Users\\cmptp\\Desktop\\GoogleOAuth_Symfony\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\translation.html.twig");
     }
 }
