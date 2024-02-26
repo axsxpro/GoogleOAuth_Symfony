@@ -127,31 +127,31 @@
             {{form_widget(registrationForm.prenom, {'attr': {'class':'form-control', 'placeholder': 'Votre contenu ici'}}) }}
             {{ form_errors(registrationForm.prenom) }}
                 
-            {{form_label(registrationForm.date_de_naissance, null, {'label_attr': {'class':'form-label'}}) }}
+            {# {{form_label(registrationForm.date_de_naissance, null, {'label_attr': {'class':'form-label'}}) }}
             {{form_widget(registrationForm.date_de_naissance, {'attr': {'class':'form-control', 'placeholder':'Votre contenu ici'}}) }}
-            {{ form_errors(registrationForm.date_de_naissance) }}
+            {{ form_errors(registrationForm.date_de_naissance) }} #}
                 
             {{form_label(registrationForm.email, null, {'label_attr': {'class':'form-label'}}) }}
             {{form_widget(registrationForm.email, {'attr': {'class':'form-control', 'placeholder': 'Votre contenu ici'}}) }}
             {{ form_errors(registrationForm.email) }}
 
-            {{form_label(registrationForm.adresse, null, {'label_attr': {'class':'form-label'}}) }}
+            {# {{form_label(registrationForm.adresse, null, {'label_attr': {'class':'form-label'}}) }}
             {{form_widget(registrationForm.adresse, {'attr': {'class':'form-control', 'placeholder': 'Votre contenu ici'}}) }}
-            {{ form_errors(registrationForm.adresse) }}
+            {{ form_errors(registrationForm.adresse) }} #}
                 
-            {{form_label(registrationForm.login, null, {'label_attr': {'class':'form-label'}}) }}
+            {# {{form_label(registrationForm.login, null, {'label_attr': {'class':'form-label'}}) }}
             {{form_widget(registrationForm.login, {'attr': {'class':'form-control', 'placeholder': 'Votre contenu ici'}}) }}
-            {{ form_errors(registrationForm.login) }}
+            {{ form_errors(registrationForm.login) }} #}
                 
             {{form_label(registrationForm.password, 'Mot de passe', {'label_attr': {'class':'form-label'}}) }}
             {{form_widget(registrationForm.password, {'attr': {'class':'form-control', 'placeholder': 'Votre contenu ici' }}) }}
             {{ form_errors(registrationForm.password) }}
 
-            <div class='form-check' id="cgv">
+            {# <div class='form-check' id="cgv">
                 {{form_label(registrationForm.Conditions_utilisations, 'En créant un compte, vous acceptez les
                 conditions générales de vente du site.', {'label_attr': {'class':'form-check-label'}}) }}
                 {{form_widget(registrationForm.Conditions_utilisations, {'attr': {'class':'form-check-input'}}) }}
-            </div>
+            </div> #}
 
             <div class="boutonInscription">
                 <button type="submit" id="btnInscription">INSCRIPTION</button>

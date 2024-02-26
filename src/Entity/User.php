@@ -38,14 +38,14 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 255)]
     private ?string $prenom = null;
 
-    #[ORM\Column(type: Types::DATE_MUTABLE)]
-    private ?\DateTimeInterface $date_de_naissance = null;
+    // #[ORM\Column(type: Types::DATE_MUTABLE)]
+    // private ?\DateTimeInterface $date_de_naissance = null;
 
-    #[ORM\Column(type: Types::TEXT)]
-    private ?string $adresse = null;
+    // #[ORM\Column(type: Types::TEXT)]
+    // private ?string $adresse = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $login = null;
+    // #[ORM\Column(length: 255)]
+    // private ?string $login = null;
 
     public function getId(): ?int
     {
@@ -141,39 +141,39 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getDateDeNaissance(): ?\DateTimeInterface
-    {
-        return $this->date_de_naissance;
-    }
+    // public function getDateDeNaissance(): ?\DateTimeInterface
+    // {
+    //     return $this->date_de_naissance;
+    // }
 
-    public function setDateDeNaissance(\DateTimeInterface $date_de_naissance): static
-    {
-        $this->date_de_naissance = $date_de_naissance;
+    // public function setDateDeNaissance(\DateTimeInterface $date_de_naissance): static
+    // {
+    //     $this->date_de_naissance = $date_de_naissance;
 
-        return $this;
-    }
+    //     return $this;
+    // }
 
-    public function getAdresse(): ?string
-    {
-        return $this->adresse;
-    }
+    // public function getAdresse(): ?string
+    // {
+    //     return $this->adresse;
+    // }
 
-    public function setAdresse(string $adresse): static
-    {
-        $this->adresse = $adresse;
+    // public function setAdresse(string $adresse): static
+    // {
+    //     $this->adresse = $adresse;
 
-        return $this;
-    }
+    //     return $this;
+    // }
 
-    public function getLogin(): ?string
-    {
-        return $this->login;
-    }
+    // public function getLogin(): ?string
+    // {
+    //     return $this->login;
+    // }
 
-    public function setLogin(string $login): static
-    {
-        $this->login = $login;
+    // public function setLogin(string $login): static
+    // {
+    //     $this->login = $login;
 
-        return $this;
-    }
+    //     return $this;
+    // }
 }

@@ -4,7 +4,7 @@ namespace App\Form;
 
 use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+// use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -12,7 +12,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 // use Symfony\Component\Mime\Message;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Email;
-use Symfony\Component\Validator\Constraints\IsTrue;
+// use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\Validator\Constraints\Length;
 // use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Constraints\Regex;
@@ -44,11 +44,11 @@ class RegistrationFormType extends AbstractType
             ],
         ])
 
-            ->add('date_de_naissance', null, [
-                'widget' => 'single_text',
-                'invalid_message' => 'Veuillez indiquer votre date de naissance',
+            // ->add('date_de_naissance', null, [
+            //     'widget' => 'single_text',
+            //     'invalid_message' => 'Veuillez indiquer votre date de naissance',
                 
-            ])
+            // ])
 
             ->add('email', EmailType::class, [
                 'constraints' => [
@@ -58,30 +58,30 @@ class RegistrationFormType extends AbstractType
                 ],
             ])
 
-            ->add('adresse', TextType::class, [
-                'constraints' => [
+            // ->add('adresse', TextType::class, [
+            //     'constraints' => [
                     
-                ],
-            ])
+            //     ],
+            // ])
 
-            ->add('login', TextType::class, [
-                'constraints' => [
-                    new Length([
-                        'min' => 1,
-                        'minMessage' => 'Le login doit avoir au moins {{ limit }} caractères',
+            // ->add('login', TextType::class, [
+            //     'constraints' => [
+            //         new Length([
+            //             'min' => 1,
+            //             'minMessage' => 'Le login doit avoir au moins {{ limit }} caractères',
                         
-                    ]),
-                ],
-            ])
+            //         ]),
+            //     ],
+            // ])
 
-            ->add('Conditions_utilisations', CheckboxType::class, [ // Ajoute un champ de type case à cocher nommé 'conditions '
-                'mapped' => false, // Ne mappe pas ce champ directement à une propriété de l'entité User
-                'constraints' => [ // Ajoute des contraintes de validation
-                    new IsTrue([  // Vérifie si la case à cocher est cochée
-                        'message' => 'Vous devez accepter nos conditions d\'utilisation', // Message d'erreur en cas d'échec
-                    ]),
-                ],
-            ])
+            // ->add('Conditions_utilisations', CheckboxType::class, [ // Ajoute un champ de type case à cocher nommé 'conditions '
+            //     'mapped' => false, // Ne mappe pas ce champ directement à une propriété de l'entité User
+            //     'constraints' => [ // Ajoute des contraintes de validation
+            //         new IsTrue([  // Vérifie si la case à cocher est cochée
+            //             'message' => 'Vous devez accepter nos conditions d\'utilisation', // Message d'erreur en cas d'échec
+            //         ]),
+            //     ],
+            // ])
 
             ->add('password', PasswordType::class, [ // Ajoute un champ de type mot de passe nommé 'password'
                 'mapped' => false,
@@ -113,4 +113,5 @@ class RegistrationFormType extends AbstractType
             'data_class' => User::class, 
         ]);
     }
+
 }
