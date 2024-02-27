@@ -26,6 +26,7 @@ class GoogleOAuthController extends AbstractController
         if (!$this->getUser()) {
 
             return new JsonResponse(array('status' => false, 'message' => "Utilisateur non trouvé!"));
+            
         } else {
 
             return $this->redirectToRoute('home');

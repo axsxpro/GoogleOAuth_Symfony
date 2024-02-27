@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '5eaf8ef470a3e70aa38de1a84cde07fc67e65796',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '5eaf8ef470a3e70aa38de1a84cde07fc67e65796',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -191,9 +191,9 @@
             'dev_requirement' => false,
         ),
         'knpuniversity/oauth2-client-bundle' => array(
-            'pretty_version' => 'v2.18.0',
-            'version' => '2.18.0.0',
-            'reference' => '2f6c9342c711597e3b5f1f2468910336be5232d6',
+            'pretty_version' => 'v2.18.1',
+            'version' => '2.18.1.0',
+            'reference' => '1d59f49f164805b45f95f92cf743781bc2ba7d2b',
             'type' => 'symfony-bundle',
             'install_path' => __DIR__ . '/../knpuniversity/oauth2-client-bundle',
             'aliases' => array(),
