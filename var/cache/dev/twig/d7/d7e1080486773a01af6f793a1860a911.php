@@ -26,6 +26,7 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
+            'stylesheets' => [$this, 'block_stylesheets'],
             'body' => [$this, 'block_body'],
         ];
     }
@@ -74,7 +75,28 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
 
     }
 
-    // line 5
+    // line 6
+    public function block_stylesheets($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 7
+        echo "<link rel=\"stylesheet\" href=\"/asset/css/request.css\">
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 11
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -84,59 +106,15 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
+        // line 12
         echo "
 
-<style>
-
-    .conteneur {
-
-        display: flex;
-        justify-content: center;
-        padding: 100px;
-
-    }
-
-    .formulaireReinitialisation{
-        
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-
-    }
-
-    .blocReinitialisation {
-
-        align-items: center;
-        padding: 50px;
-    }
-
-    .boutonReinitialisation {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-
-    }
-
-    #btnReinit {
-
-        border: solid #E0B973;
-        color: black;
-        font-weight: bold;
-        background-color: #E0B973;
-        border-radius: 5px;
-        padding: 10px;
-        width: 50%;
-
-    }
-</style>
-
 ";
-        // line 52
+        // line 14
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 52, $this->source); })()), "flashes", ["reset_password_error"], "method", false, false, false, 52));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 14, $this->source); })()), "flashes", ["reset_password_error"], "method", false, false, false, 14));
         foreach ($context['_seq'] as $context["_key"] => $context["flash_error"]) {
-            // line 53
+            // line 15
             echo "<div class=\"alert alert-danger\" role=\"alert\">";
             echo twig_escape_filter($this->env, $context["flash_error"], "html", null, true);
             echo "</div>
@@ -145,7 +123,7 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['flash_error'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 55
+        // line 17
         echo "
 
 <div class=\"conteneur\">
@@ -155,14 +133,14 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
         <h1>Réinitialisez votre mot de passe</h1>
 
         ";
-        // line 63
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["requestForm"]) || array_key_exists("requestForm", $context) ? $context["requestForm"] : (function () { throw new RuntimeError('Variable "requestForm" does not exist.', 63, $this->source); })()), 'form_start');
+        // line 25
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["requestForm"]) || array_key_exists("requestForm", $context) ? $context["requestForm"] : (function () { throw new RuntimeError('Variable "requestForm" does not exist.', 25, $this->source); })()), 'form_start');
         echo "
 
         <div class=\"formulaireReinitialisation\">
             ";
-        // line 66
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["requestForm"]) || array_key_exists("requestForm", $context) ? $context["requestForm"] : (function () { throw new RuntimeError('Variable "requestForm" does not exist.', 66, $this->source); })()), "email", [], "any", false, false, false, 66), 'row');
+        // line 28
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["requestForm"]) || array_key_exists("requestForm", $context) ? $context["requestForm"] : (function () { throw new RuntimeError('Variable "requestForm" does not exist.', 28, $this->source); })()), "email", [], "any", false, false, false, 28), 'row');
         echo "
         </div>
 
@@ -178,8 +156,8 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
         </div>
 
         ";
-        // line 80
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["requestForm"]) || array_key_exists("requestForm", $context) ? $context["requestForm"] : (function () { throw new RuntimeError('Variable "requestForm" does not exist.', 80, $this->source); })()), 'form_end');
+        // line 42
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["requestForm"]) || array_key_exists("requestForm", $context) ? $context["requestForm"] : (function () { throw new RuntimeError('Variable "requestForm" does not exist.', 42, $this->source); })()), 'form_end');
         echo "
 
     </div>
@@ -207,7 +185,7 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
 
     public function getDebugInfo()
     {
-        return array (  182 => 80,  165 => 66,  159 => 63,  149 => 55,  140 => 53,  136 => 52,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  160 => 42,  143 => 28,  137 => 25,  127 => 17,  118 => 15,  114 => 14,  110 => 12,  100 => 11,  89 => 7,  79 => 6,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -216,52 +194,14 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
 
 {% block title %}Réinitialiser son mot de passe{% endblock %}
 
+
+{% block stylesheets %}
+<link rel=\"stylesheet\" href=\"/asset/css/request.css\">
+{% endblock %}
+
+
 {% block body %}
 
-
-<style>
-
-    .conteneur {
-
-        display: flex;
-        justify-content: center;
-        padding: 100px;
-
-    }
-
-    .formulaireReinitialisation{
-        
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-
-    }
-
-    .blocReinitialisation {
-
-        align-items: center;
-        padding: 50px;
-    }
-
-    .boutonReinitialisation {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-
-    }
-
-    #btnReinit {
-
-        border: solid #E0B973;
-        color: black;
-        font-weight: bold;
-        background-color: #E0B973;
-        border-radius: 5px;
-        padding: 10px;
-        width: 50%;
-
-    }
-</style>
 
 {% for flash_error in app.flashes('reset_password_error') %}
 <div class=\"alert alert-danger\" role=\"alert\">{{ flash_error }}</div>

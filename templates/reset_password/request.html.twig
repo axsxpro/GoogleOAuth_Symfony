@@ -2,52 +2,14 @@
 
 {% block title %}Réinitialiser son mot de passe{% endblock %}
 
+
+{% block stylesheets %}
+<link rel="stylesheet" href="/asset/css/request.css">
+{% endblock %}
+
+
 {% block body %}
 
-
-<style>
-
-    .conteneur {
-
-        display: flex;
-        justify-content: center;
-        padding: 100px;
-
-    }
-
-    .formulaireReinitialisation{
-        
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-
-    }
-
-    .blocReinitialisation {
-
-        align-items: center;
-        padding: 50px;
-    }
-
-    .boutonReinitialisation {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-
-    }
-
-    #btnReinit {
-
-        border: solid #E0B973;
-        color: black;
-        font-weight: bold;
-        background-color: #E0B973;
-        border-radius: 5px;
-        padding: 10px;
-        width: 50%;
-
-    }
-</style>
 
 {% for flash_error in app.flashes('reset_password_error') %}
 <div class="alert alert-danger" role="alert">{{ flash_error }}</div>

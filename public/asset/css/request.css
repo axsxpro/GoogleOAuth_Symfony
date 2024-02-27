@@ -1,0 +1,40 @@
+.conteneur {
+
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+
+}
+
+.formulaireReinitialisation{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.blocReinitialisation {
+
+    align-items: center;
+    padding: 50px;
+}
+
+.boutonReinitialisation {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+#btnReinit {
+
+    border: solid #E0B973;
+    color: black;
+    font-weight: bold;
+    background-color: #E0B973;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+
+}

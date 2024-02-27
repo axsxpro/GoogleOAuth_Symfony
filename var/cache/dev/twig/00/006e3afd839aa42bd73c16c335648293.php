@@ -26,6 +26,7 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
+            'stylesheets' => [$this, 'block_stylesheets'],
             'body' => [$this, 'block_body'],
         ];
     }
@@ -75,6 +76,27 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
     }
 
     // line 6
+    public function block_stylesheets($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 7
+        echo "<link rel=\"stylesheet\" href=\"/asset/css/login.css\">
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 11
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -84,109 +106,20 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 7
+        // line 12
         echo "
-<style>
-    .blocFormulaireInscription {
-        display: flex;
-        padding: 100px;
-        justify-content: center;
-
-    }
-
-    .blocInscriptionConnexion {
-
-        display: flex;
-        padding: 20px;
-        border: solid black 2px;
-        background-color: black;
-    }
-
-    .formulaire_Inscription {
-        display: inline-block;
-        padding: 40px;
-        border-radius: 30px;
-        border: solid #E0B973 10px;
-        background-color: black;
-        width: 50%;
-    }
-
-    .form {
-        display: inline-block;
-        padding: 50px;
-        color: white;
-        background-color: black;
-        border: solid black 2px;
-        width: 100%;
-    }
-
-    .blocInscription {
-        display: flex;
-        justify-content: center;
-        color: white;
-        padding: 30px;
-        border-bottom: solid #E0B973 3px;
-        border-right: solid #E0B973 3px;
-        width: 50%;
-    }
-
-    .blocConnexion {
-        display: flex;
-        justify-content: center;
-        color: white;
-        padding: 30px;
-        border-bottom: solid #E0B973 3px;
-        border-left: solid #E0B973 3px;
-        width: 50%;
-    }
-
-    .mdp {
-
-        text-align: center;
-        margin: 30px;
-
-    }
-
-    .boutonConnexion {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    #btnConnexion {
-
-        border: solid #E0B973;
-        color: black;
-        font-weight: bold;
-        background-color: #E0B973;
-        border-radius: 5px;
-        padding: 10px;
-        width: 50%;
-    }
-
-    .googleAUTH {
-
-        display: flex;
-        justify-content: center;
-        border: solid #E0B973;
-        padding: 10px;
-    }
-
-</style>
-
 <form method=\"post\">
 
     ";
-        // line 99
-        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 99, $this->source); })())) {
-            // line 100
+        // line 15
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 15, $this->source); })())) {
+            // line 16
             echo "    <div class=\"alert alert-danger\">";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 100, $this->source); })()), "messageKey", [], "any", false, false, false, 100), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 100, $this->source); })()), "messageData", [], "any", false, false, false, 100), "security"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 16, $this->source); })()), "messageKey", [], "any", false, false, false, 16), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 16, $this->source); })()), "messageData", [], "any", false, false, false, 16), "security"), "html", null, true);
             echo "</div>
     ";
         }
-        // line 102
+        // line 18
         echo "
 
     <div class=\"blocFormulaireInscription\">
@@ -198,14 +131,14 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
                 <div class=\"blocInscription\">
                     <h4><a class=\"nav-link active\" aria-current=\"page\" href=\"";
-        // line 112
+        // line 28
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
         echo "\">INSCRIPTION</a></h4>
                 </div>
 
                 <div class=\"blocConnexion\">
                     <h4><a class=\"nav-link active\" aria-current=\"page\" href=\"";
-        // line 116
+        // line 32
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\">CONNEXION</a></h4>
                 </div>
@@ -218,8 +151,8 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
                 <label for=\"inputEmail\">Email</label>
                 <input type=\"email\" value=\"";
-        // line 126
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 126, $this->source); })()), "html", null, true);
+        // line 42
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 42, $this->source); })()), "html", null, true);
         echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus>
 
 
@@ -233,7 +166,7 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
 
                 <input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 138
+        // line 54
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\">
 
@@ -245,7 +178,7 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
                 <div class=\"googleAUTH\">
                     <a class=\"nav-link active\" href=\"";
-        // line 147
+        // line 63
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("connect_google");
         echo "\"><img  src=\"/img/LogoGoogleAuth.png\" style=' width:30px; 'alt=\"LogoGoogleAUTH\">oogle connexion</a>
                 </div>
@@ -280,7 +213,7 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
     public function getDebugInfo()
     {
-        return array (  249 => 147,  237 => 138,  222 => 126,  209 => 116,  202 => 112,  190 => 102,  184 => 100,  182 => 99,  88 => 7,  78 => 6,  59 => 3,  36 => 1,);
+        return array (  182 => 63,  170 => 54,  155 => 42,  142 => 32,  135 => 28,  123 => 18,  117 => 16,  115 => 15,  110 => 12,  100 => 11,  89 => 7,  79 => 6,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -290,96 +223,12 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 {% block title %}Connexion{% endblock %}
 
 
+{% block stylesheets %}
+<link rel=\"stylesheet\" href=\"/asset/css/login.css\">
+{% endblock %}
+
+
 {% block body %}
-
-<style>
-    .blocFormulaireInscription {
-        display: flex;
-        padding: 100px;
-        justify-content: center;
-
-    }
-
-    .blocInscriptionConnexion {
-
-        display: flex;
-        padding: 20px;
-        border: solid black 2px;
-        background-color: black;
-    }
-
-    .formulaire_Inscription {
-        display: inline-block;
-        padding: 40px;
-        border-radius: 30px;
-        border: solid #E0B973 10px;
-        background-color: black;
-        width: 50%;
-    }
-
-    .form {
-        display: inline-block;
-        padding: 50px;
-        color: white;
-        background-color: black;
-        border: solid black 2px;
-        width: 100%;
-    }
-
-    .blocInscription {
-        display: flex;
-        justify-content: center;
-        color: white;
-        padding: 30px;
-        border-bottom: solid #E0B973 3px;
-        border-right: solid #E0B973 3px;
-        width: 50%;
-    }
-
-    .blocConnexion {
-        display: flex;
-        justify-content: center;
-        color: white;
-        padding: 30px;
-        border-bottom: solid #E0B973 3px;
-        border-left: solid #E0B973 3px;
-        width: 50%;
-    }
-
-    .mdp {
-
-        text-align: center;
-        margin: 30px;
-
-    }
-
-    .boutonConnexion {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    #btnConnexion {
-
-        border: solid #E0B973;
-        color: black;
-        font-weight: bold;
-        background-color: #E0B973;
-        border-radius: 5px;
-        padding: 10px;
-        width: 50%;
-    }
-
-    .googleAUTH {
-
-        display: flex;
-        justify-content: center;
-        border: solid #E0B973;
-        padding: 10px;
-    }
-
-</style>
 
 <form method=\"post\">
 
