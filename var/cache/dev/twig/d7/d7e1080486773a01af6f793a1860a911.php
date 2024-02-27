@@ -66,7 +66,7 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Réinitialiser son mot de passe";
+        echo "Reset Your Password";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -75,7 +75,7 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
 
     }
 
-    // line 6
+    // line 5
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -85,7 +85,7 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 7
+        // line 6
         echo "<link rel=\"stylesheet\" href=\"/asset/css/request.css\">
 ";
         
@@ -96,7 +96,7 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
 
     }
 
-    // line 11
+    // line 9
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -106,15 +106,14 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 12
+        // line 10
         echo "
-
 ";
-        // line 14
+        // line 11
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 14, $this->source); })()), "flashes", ["reset_password_error"], "method", false, false, false, 14));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 11, $this->source); })()), "flashes", ["reset_password_error"], "method", false, false, false, 11));
         foreach ($context['_seq'] as $context["_key"] => $context["flash_error"]) {
-            // line 15
+            // line 12
             echo "<div class=\"alert alert-danger\" role=\"alert\">";
             echo twig_escape_filter($this->env, $context["flash_error"], "html", null, true);
             echo "</div>
@@ -123,41 +122,40 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['flash_error'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 17
+        // line 14
         echo "
+<div class=\"container\">
 
-<div class=\"conteneur\">
+    <div class=\"resetBlock\">
 
-    <div class=\"blocReinitialisation\">
-
-        <h1>Réinitialisez votre mot de passe</h1>
+        <h1>Reset Your Password</h1>
 
         ";
-        // line 25
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["requestForm"]) || array_key_exists("requestForm", $context) ? $context["requestForm"] : (function () { throw new RuntimeError('Variable "requestForm" does not exist.', 25, $this->source); })()), 'form_start');
+        // line 21
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["requestForm"]) || array_key_exists("requestForm", $context) ? $context["requestForm"] : (function () { throw new RuntimeError('Variable "requestForm" does not exist.', 21, $this->source); })()), 'form_start');
         echo "
 
-        <div class=\"formulaireReinitialisation\">
+        <div class=\"resetForm\">
             ";
-        // line 28
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["requestForm"]) || array_key_exists("requestForm", $context) ? $context["requestForm"] : (function () { throw new RuntimeError('Variable "requestForm" does not exist.', 28, $this->source); })()), "email", [], "any", false, false, false, 28), 'row');
+        // line 24
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["requestForm"]) || array_key_exists("requestForm", $context) ? $context["requestForm"] : (function () { throw new RuntimeError('Variable "requestForm" does not exist.', 24, $this->source); })()), "email", [], "any", false, false, false, 24), 'row');
         echo "
         </div>
 
-        <div class=\"texteReinit\">
+        <div class=\"resetText\">
             <small>
-                Entrez votre adresse e-mail et nous vous enverrons un
-                lien pour réinitialiser votre mot de passe.
+                Enter your email address and we'll send you
+                a link to reset your password.
             </small>
         </div>
 
-        <div class=\"boutonReinitialisation\">
-            <button id=\"btnReinit\">Envoyer un e-mail de réinitialisation du mot de passe</button>
+        <div class=\"resetButton\">
+            <button id=\"btnReset\">Send password reset email</button>
         </div>
 
         ";
-        // line 42
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["requestForm"]) || array_key_exists("requestForm", $context) ? $context["requestForm"] : (function () { throw new RuntimeError('Variable "requestForm" does not exist.', 42, $this->source); })()), 'form_end');
+        // line 38
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["requestForm"]) || array_key_exists("requestForm", $context) ? $context["requestForm"] : (function () { throw new RuntimeError('Variable "requestForm" does not exist.', 38, $this->source); })()), 'form_end');
         echo "
 
     </div>
@@ -185,50 +183,46 @@ class __TwigTemplate_416cf2160389dce80b63dcdd312c4fba extends Template
 
     public function getDebugInfo()
     {
-        return array (  160 => 42,  143 => 28,  137 => 25,  127 => 17,  118 => 15,  114 => 14,  110 => 12,  100 => 11,  89 => 7,  79 => 6,  60 => 3,  37 => 1,);
+        return array (  158 => 38,  141 => 24,  135 => 21,  126 => 14,  117 => 12,  113 => 11,  110 => 10,  100 => 9,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Réinitialiser son mot de passe{% endblock %}
-
+{% block title %}Reset Your Password{% endblock %}
 
 {% block stylesheets %}
 <link rel=\"stylesheet\" href=\"/asset/css/request.css\">
 {% endblock %}
 
-
 {% block body %}
-
 
 {% for flash_error in app.flashes('reset_password_error') %}
 <div class=\"alert alert-danger\" role=\"alert\">{{ flash_error }}</div>
 {% endfor %}
 
+<div class=\"container\">
 
-<div class=\"conteneur\">
+    <div class=\"resetBlock\">
 
-    <div class=\"blocReinitialisation\">
-
-        <h1>Réinitialisez votre mot de passe</h1>
+        <h1>Reset Your Password</h1>
 
         {{ form_start(requestForm) }}
 
-        <div class=\"formulaireReinitialisation\">
+        <div class=\"resetForm\">
             {{ form_row(requestForm.email) }}
         </div>
 
-        <div class=\"texteReinit\">
+        <div class=\"resetText\">
             <small>
-                Entrez votre adresse e-mail et nous vous enverrons un
-                lien pour réinitialiser votre mot de passe.
+                Enter your email address and we'll send you
+                a link to reset your password.
             </small>
         </div>
 
-        <div class=\"boutonReinitialisation\">
-            <button id=\"btnReinit\">Envoyer un e-mail de réinitialisation du mot de passe</button>
+        <div class=\"resetButton\">
+            <button id=\"btnReset\">Send password reset email</button>
         </div>
 
         {{ form_end(requestForm) }}

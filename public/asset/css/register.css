@@ -1,19 +1,17 @@
-.blocFormulaireInscription {
+.registrationFormBlock {
     display: flex;
     padding: 100px;
     justify-content: center;
-
 }
 
-.blocInscriptionConnexion {
-
+.registrationLoginBlock {
     display: flex;
     padding: 20px;
     border: solid black 2px;
     background-color: black;
 }
 
-.formulaire_Inscription {
+.registration_Form {
     display: inline-block;
     padding: 40px;
     border-radius: 30px;
@@ -31,7 +29,7 @@
     width: 100%;
 }
 
-.blocInscription {
+.registrationBlock {
     display: flex;
     justify-content: center;
     color: white;
@@ -41,7 +39,7 @@
     width: 50%;
 }
 
-.blocConnexion {
+.loginBlock {
     display: flex;
     justify-content: center;
     color: white;
@@ -52,19 +50,16 @@
 }
 
 #cgv {
-
     margin: 30px;
 }
 
-
-.boutonInscription {
+.registrationButton {
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
 
-#btnInscription {
-
+#btnRegistration {
     border: solid #E0B973;
     color: black;
     font-weight: bold;
@@ -72,5 +67,4 @@
     border-radius: 5px;
     padding: 10px;
     width: 50%;
-    
 }

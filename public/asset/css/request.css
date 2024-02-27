@@ -1,34 +1,28 @@
-.conteneur {
-
+.container {
     display: flex;
     justify-content: center;
     padding: 100px;
-
 }
 
-.formulaireReinitialisation{
-    
+.resetForm {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-
 }
 
-.blocReinitialisation {
-
+.resetBlock {
     align-items: center;
+    text-align: center;
     padding: 50px;
 }
 
-.boutonReinitialisation {
+.resetButton {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-
 }
 
-#btnReinit {
-
+#btnReset {
     border: solid #E0B973;
     color: black;
     font-weight: bold;
@@ -36,5 +30,4 @@
     border-radius: 5px;
     padding: 10px;
     width: 50%;
-
 }

@@ -48,7 +48,7 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
             // line 4
             echo "        <a class=\"navbar-brand\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
-            echo "\">Accueil</a>
+            echo "\">Home</a>
         ";
         }
         // line 6
@@ -64,11 +64,11 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
             // line 13
             echo "                <a class=\"nav-link active\" aria-current=\"page\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
-            echo "\">Inscription</a>
+            echo "\">Registration</a>
                 <a class=\"nav-link active\" aria-current=\"page\" href=\"";
             // line 14
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-            echo "\">Connexion</a>
+            echo "\">Login</a>
             ";
         }
         // line 16
@@ -88,7 +88,7 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
                         <a href=\"";
             // line 23
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-            echo "\">Deconnexion</a>
+            echo "\">Logout</a>
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
         return new Source("<nav class=\"navbar navbar-expand-lg bg-body-tertiary\">
     <div class=\"container-fluid\">
         {% if app.user %}
-        <a class=\"navbar-brand\" href=\"{{ path('home') }}\">Accueil</a>
+        <a class=\"navbar-brand\" href=\"{{ path('home') }}\">Home</a>
         {% endif %}
         <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavAltMarkup\"
             aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -137,8 +137,8 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
         <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
             <div class=\"navbar-nav\">
             {% if not app.user %}
-                <a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_register') }}\">Inscription</a>
-                <a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_login') }}\">Connexion</a>
+                <a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_register') }}\">Registration</a>
+                <a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_login') }}\">Login</a>
             {% endif %}
             </div>
             {% if app.user %}
@@ -147,7 +147,7 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
                     <div class=\"mb-3\">
                         Bonjour, {{ app.user.userIdentifier }}!
                         <br>
-                        <a href=\"{{ path('app_logout') }}\">Deconnexion</a>
+                        <a href=\"{{ path('app_logout') }}\">Logout</a>
                     </div>
                 </div>
             </div>

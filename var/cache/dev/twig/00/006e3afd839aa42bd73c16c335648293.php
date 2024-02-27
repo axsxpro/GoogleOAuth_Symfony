@@ -66,7 +66,7 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Connexion";
+        echo "Login";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -75,7 +75,7 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
     }
 
-    // line 6
+    // line 5
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -85,7 +85,7 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 7
+        // line 6
         echo "<link rel=\"stylesheet\" href=\"/asset/css/login.css\">
 ";
         
@@ -96,7 +96,7 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
     }
 
-    // line 11
+    // line 9
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -106,83 +106,73 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 12
+        // line 10
         echo "
 <form method=\"post\">
 
     ";
-        // line 15
-        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 15, $this->source); })())) {
-            // line 16
+        // line 13
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 13, $this->source); })())) {
+            // line 14
             echo "    <div class=\"alert alert-danger\">";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 16, $this->source); })()), "messageKey", [], "any", false, false, false, 16), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 16, $this->source); })()), "messageData", [], "any", false, false, false, 16), "security"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 14, $this->source); })()), "messageKey", [], "any", false, false, false, 14), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 14, $this->source); })()), "messageData", [], "any", false, false, false, 14), "security"), "html", null, true);
             echo "</div>
     ";
         }
-        // line 18
+        // line 16
         echo "
+    <div class=\"registrationFormBlock\">
 
-    <div class=\"blocFormulaireInscription\">
+        <div class='registration_Form'>
 
-        <div class='formulaire_Inscription'>
+            <div class=\"registrationLoginBlock\">
 
-            
-            <div class=\"blocInscriptionConnexion\">
-
-                <div class=\"blocInscription\">
+                <div class=\"registrationBlock\">
                     <h4><a class=\"nav-link active\" aria-current=\"page\" href=\"";
-        // line 28
+        // line 24
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
-        echo "\">INSCRIPTION</a></h4>
+        echo "\">REGISTER</a></h4>
                 </div>
 
-                <div class=\"blocConnexion\">
+                <div class=\"loginBlock\">
                     <h4><a class=\"nav-link active\" aria-current=\"page\" href=\"";
-        // line 32
+        // line 28
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-        echo "\">CONNEXION</a></h4>
+        echo "\">LOGIN</a></h4>
                 </div>
 
             </div>
 
-
-
-            <div class='form' id=\"formulaireConnexion\">
+            <div class='form' id=\"loginForm\">
 
                 <label for=\"inputEmail\">Email</label>
                 <input type=\"email\" value=\"";
-        // line 42
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 42, $this->source); })()), "html", null, true);
+        // line 36
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 36, $this->source); })()), "html", null, true);
         echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus>
 
-
-                <label for=\"inputPassword\">Mot de passe</label>
+                <label for=\"inputPassword\">Password</label>
                 <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required>
 
-
-                <div class=\"mdp\">
-                    <h6><a class=\"nav-link active\" aria-current=\"page\" href=\"/reset-password\">Mot de passe oublié ?</a></h6>
+                <div class=\"passwordReset\">
+                    <h6><a class=\"nav-link active\" aria-current=\"page\" href=\"/reset-password\">Forgot password?</a></h6>
                 </div>
 
-
                 <input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 54
+        // line 45
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\">
 
-
-                <div class=\"boutonConnexion\">
-                    <button type=\"submit\" id=\"btnConnexion\"> CONNEXION </button>
+                <div class=\"loginButton\">
+                    <button type=\"submit\" id=\"btnLogin\"> LOGIN </button>
                 </div>
-
 
                 <div class=\"googleAUTH\">
                     <a class=\"nav-link active\" href=\"";
-        // line 63
+        // line 52
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("connect_google");
-        echo "\"><img  src=\"/img/LogoGoogleAuth.png\" style=' width:30px; 'alt=\"LogoGoogleAUTH\">oogle connexion</a>
+        echo "\"><img  src=\"/img/LogoGoogleAuth.png\" style=' width:30px; 'alt=\"GoogleAUTHLogo\">oogle Login</a>
                 </div>
-
 
             </div>
 
@@ -213,20 +203,18 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
 
     public function getDebugInfo()
     {
-        return array (  182 => 63,  170 => 54,  155 => 42,  142 => 32,  135 => 28,  123 => 18,  117 => 16,  115 => 15,  110 => 12,  100 => 11,  89 => 7,  79 => 6,  60 => 3,  37 => 1,);
+        return array (  173 => 52,  163 => 45,  151 => 36,  140 => 28,  133 => 24,  123 => 16,  117 => 14,  115 => 13,  110 => 10,  100 => 9,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Connexion{% endblock %}
-
+{% block title %}Login{% endblock %}
 
 {% block stylesheets %}
 <link rel=\"stylesheet\" href=\"/asset/css/login.css\">
 {% endblock %}
-
 
 {% block body %}
 
@@ -236,53 +224,43 @@ class __TwigTemplate_522617cdd1548be606f63f93b92ed3a9 extends Template
     <div class=\"alert alert-danger\">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
 
+    <div class=\"registrationFormBlock\">
 
-    <div class=\"blocFormulaireInscription\">
+        <div class='registration_Form'>
 
-        <div class='formulaire_Inscription'>
+            <div class=\"registrationLoginBlock\">
 
-            
-            <div class=\"blocInscriptionConnexion\">
-
-                <div class=\"blocInscription\">
-                    <h4><a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_register') }}\">INSCRIPTION</a></h4>
+                <div class=\"registrationBlock\">
+                    <h4><a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_register') }}\">REGISTER</a></h4>
                 </div>
 
-                <div class=\"blocConnexion\">
-                    <h4><a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_login') }}\">CONNEXION</a></h4>
+                <div class=\"loginBlock\">
+                    <h4><a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_login') }}\">LOGIN</a></h4>
                 </div>
 
             </div>
 
-
-
-            <div class='form' id=\"formulaireConnexion\">
+            <div class='form' id=\"loginForm\">
 
                 <label for=\"inputEmail\">Email</label>
                 <input type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus>
 
-
-                <label for=\"inputPassword\">Mot de passe</label>
+                <label for=\"inputPassword\">Password</label>
                 <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required>
 
-
-                <div class=\"mdp\">
-                    <h6><a class=\"nav-link active\" aria-current=\"page\" href=\"/reset-password\">Mot de passe oublié ?</a></h6>
+                <div class=\"passwordReset\">
+                    <h6><a class=\"nav-link active\" aria-current=\"page\" href=\"/reset-password\">Forgot password?</a></h6>
                 </div>
-
 
                 <input type=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token('authenticate') }}\">
 
-
-                <div class=\"boutonConnexion\">
-                    <button type=\"submit\" id=\"btnConnexion\"> CONNEXION </button>
+                <div class=\"loginButton\">
+                    <button type=\"submit\" id=\"btnLogin\"> LOGIN </button>
                 </div>
-
 
                 <div class=\"googleAUTH\">
-                    <a class=\"nav-link active\" href=\"{{ path('connect_google') }}\"><img  src=\"/img/LogoGoogleAuth.png\" style=' width:30px; 'alt=\"LogoGoogleAUTH\">oogle connexion</a>
+                    <a class=\"nav-link active\" href=\"{{ path('connect_google') }}\"><img  src=\"/img/LogoGoogleAuth.png\" style=' width:30px; 'alt=\"GoogleAUTHLogo\">oogle Login</a>
                 </div>
-
 
             </div>
 
