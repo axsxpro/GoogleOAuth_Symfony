@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* index.html.twig */
+/* /index.html.twig */
 class __TwigTemplate_2d5475d665eca5843faf9b25c1bed6be extends Template
 {
     private $source;
@@ -40,12 +40,12 @@ class __TwigTemplate_2d5475d665eca5843faf9b25c1bed6be extends Template
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "index.html.twig"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/index.html.twig"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "index.html.twig"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/index.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "index.html.twig", 1);
+        $this->parent = $this->loadTemplate("base.html.twig", "/index.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -65,7 +65,7 @@ class __TwigTemplate_2d5475d665eca5843faf9b25c1bed6be extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello Page accueil";
+        echo "Page accueil";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -87,15 +87,11 @@ class __TwigTemplate_2d5475d665eca5843faf9b25c1bed6be extends Template
         // line 6
         echo "
 <div class=\"container\">
-
     <div class=\"row\">
-
-        <div class=\"col-lg-6 mx-auto\">
+        <div class=\"col-lg-6 mx-auto my-5\"> 
             <h1 class=\"text-center\">Bienvenue sur la page d'accueil !</h1>
         </div>
-
     </div>
-    
 </div>
 
 ";
@@ -109,7 +105,7 @@ class __TwigTemplate_2d5475d665eca5843faf9b25c1bed6be extends Template
 
     public function getTemplateName()
     {
-        return "index.html.twig";
+        return "/index.html.twig";
     }
 
     public function isTraitable()
@@ -126,23 +122,19 @@ class __TwigTemplate_2d5475d665eca5843faf9b25c1bed6be extends Template
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello Page accueil{% endblock %}
+{% block title %}Page accueil{% endblock %}
 
 {% block body %}
 
 <div class=\"container\">
-
     <div class=\"row\">
-
-        <div class=\"col-lg-6 mx-auto\">
+        <div class=\"col-lg-6 mx-auto my-5\"> 
             <h1 class=\"text-center\">Bienvenue sur la page d'accueil !</h1>
         </div>
-
     </div>
-    
 </div>
 
 {% endblock %}
-", "index.html.twig", "C:\\Users\\cmptp\\Desktop\\GoogleOAuth_Symfony\\templates\\index.html.twig");
+", "/index.html.twig", "C:\\Users\\cmptp\\Desktop\\GoogleOAuth_Symfony\\templates\\index.html.twig");
     }
 }

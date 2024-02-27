@@ -42,39 +42,51 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
         // line 1
         echo "<nav class=\"navbar navbar-expand-lg bg-body-tertiary\">
     <div class=\"container-fluid\">
-        <a class=\"navbar-brand\" href=\"";
+        ";
         // line 3
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
-        echo "\">Accueil</a>
-        <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavAltMarkup\"
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 3, $this->source); })()), "user", [], "any", false, false, false, 3)) {
+            // line 4
+            echo "        <a class=\"navbar-brand\" href=\"";
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+            echo "\">Accueil</a>
+        ";
+        }
+        // line 6
+        echo "        <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavAltMarkup\"
             aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
             <span class=\"navbar-toggler-icon\"></span>
         </button>
         <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
             <div class=\"navbar-nav\">
-                <a class=\"nav-link active\" aria-current=\"page\" href=\"";
-        // line 10
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
-        echo "\">Inscription</a>
-                <a class=\"nav-link active\" aria-current=\"page\" href=\"";
-        // line 11
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-        echo "\">Connexion</a>
-            </div>
             ";
-        // line 13
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 13, $this->source); })()), "user", [], "any", false, false, false, 13)) {
+        // line 12
+        if ( !twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 12, $this->source); })()), "user", [], "any", false, false, false, 12)) {
+            // line 13
+            echo "                <a class=\"nav-link active\" aria-current=\"page\" href=\"";
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
+            echo "\">Inscription</a>
+                <a class=\"nav-link active\" aria-current=\"page\" href=\"";
             // line 14
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+            echo "\">Connexion</a>
+            ";
+        }
+        // line 16
+        echo "            </div>
+            ";
+        // line 17
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 17, $this->source); })()), "user", [], "any", false, false, false, 17)) {
+            // line 18
             echo "            <div class=\"navbar-nav ms-auto\">
                 <div class=\"nav-item\">
                     <div class=\"mb-3\">
                         Bonjour, ";
-            // line 17
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 17, $this->source); })()), "user", [], "any", false, false, false, 17), "userIdentifier", [], "any", false, false, false, 17), "html", null, true);
+            // line 21
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 21, $this->source); })()), "user", [], "any", false, false, false, 21), "userIdentifier", [], "any", false, false, false, 21), "html", null, true);
             echo "!
                         <br>
                         <a href=\"";
-            // line 19
+            // line 23
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Deconnexion</a>
                     </div>
@@ -82,7 +94,7 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
             </div>
             ";
         }
-        // line 24
+        // line 28
         echo "        </div>
     </div>
 </nav>
@@ -108,22 +120,26 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
 
     public function getDebugInfo()
     {
-        return array (  86 => 24,  78 => 19,  73 => 17,  68 => 14,  66 => 13,  61 => 11,  57 => 10,  47 => 3,  43 => 1,);
+        return array (  98 => 28,  90 => 23,  85 => 21,  80 => 18,  78 => 17,  75 => 16,  70 => 14,  65 => 13,  63 => 12,  55 => 6,  49 => 4,  47 => 3,  43 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<nav class=\"navbar navbar-expand-lg bg-body-tertiary\">
     <div class=\"container-fluid\">
+        {% if app.user %}
         <a class=\"navbar-brand\" href=\"{{ path('home') }}\">Accueil</a>
+        {% endif %}
         <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavAltMarkup\"
             aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
             <span class=\"navbar-toggler-icon\"></span>
         </button>
         <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">
             <div class=\"navbar-nav\">
+            {% if not app.user %}
                 <a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_register') }}\">Inscription</a>
                 <a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_login') }}\">Connexion</a>
+            {% endif %}
             </div>
             {% if app.user %}
             <div class=\"navbar-nav ms-auto\">
