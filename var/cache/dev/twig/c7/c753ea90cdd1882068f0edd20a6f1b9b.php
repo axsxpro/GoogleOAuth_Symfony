@@ -89,7 +89,7 @@ class __TwigTemplate_2d5475d665eca5843faf9b25c1bed6be extends Template
 <div class=\"container\">
     <div class=\"row\">
         <div class=\"col-lg-6 mx-auto my-5\"> 
-            <h1 class=\"text-center\">Bienvenue sur la page d'accueil !</h1>
+            <h1 class=\"text-center\">Welcolm in the home page !</h1>
         </div>
     </div>
 </div>
@@ -129,7 +129,7 @@ class __TwigTemplate_2d5475d665eca5843faf9b25c1bed6be extends Template
 <div class=\"container\">
     <div class=\"row\">
         <div class=\"col-lg-6 mx-auto my-5\"> 
-            <h1 class=\"text-center\">Bienvenue sur la page d'accueil !</h1>
+            <h1 class=\"text-center\">Welcolm in the home page !</h1>
         </div>
     </div>
 </div>

@@ -80,7 +80,7 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
             echo "            <div class=\"navbar-nav ms-auto\">
                 <div class=\"nav-item\">
                     <div class=\"mb-3\">
-                        Bonjour, ";
+                        Hi, ";
             // line 21
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 21, $this->source); })()), "user", [], "any", false, false, false, 21), "userIdentifier", [], "any", false, false, false, 21), "html", null, true);
             echo "!
@@ -145,7 +145,7 @@ class __TwigTemplate_59468af6624e8b9c33ab96baee198e52 extends Template
             <div class=\"navbar-nav ms-auto\">
                 <div class=\"nav-item\">
                     <div class=\"mb-3\">
-                        Bonjour, {{ app.user.userIdentifier }}!
+                        Hi, {{ app.user.userIdentifier }}!
                         <br>
                         <a href=\"{{ path('app_logout') }}\">Logout</a>
                     </div>
